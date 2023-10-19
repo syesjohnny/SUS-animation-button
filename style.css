@@ -9,7 +9,10 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    transition-duration: 500ms;
+    transition-duration: 700ms;
+    font-size: 1.1em;
+    font-weight: bolder;
+    border-radius: 7px;
 }
 
 .button1::before {
@@ -22,7 +25,7 @@
     border-style: solid;
     border-width: 20px 0 0 20px;
     border-color: transparent transparent transparent #ffffff;
-    transition-duration: 500ms;
+    transition-duration: 700ms;
     z-index: -1;
 }
 
@@ -39,12 +42,12 @@
     height: 35px;
     border: 2px solid #ffffff;
     transform: rotate(45deg);
-    transition-duration: 500ms;
+    transition-duration: 700ms;
 }
 
 .button1:hover::after {
     width: 32px;
-    height: 32px; 
+    height: 32px;
 
 }
 
@@ -62,4 +65,65 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    gap: 25px;
+}
+
+
+
+
+
+
+
+
+.button69 {
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition-duration: 700ms;
+    border-radius: 7px;
+}
+
+.button69::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+    transition-duration: 700ms;
+    z-index: -1;
+}
+
+.button69:hover::before {
+    border-width: 0 255px 255px 0;
+}
+
+
+.button69:hover::after {
+    width: 32px;
+    height: 32px;
+
+}
+
+.button69:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.api-icon{
+    transition-duration: 700ms;
+}
+
+.button69:hover .api-icon{
+    transform: rotate(180deg);
 }
